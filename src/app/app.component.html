@@ -1,0 +1,25 @@
+<div class="nav-bar">
+  <h2>Simple Calculator:</h2>
+</div>
+<body>
+  <div class="div1">
+  <input type="number" placeholder="Number1" [(ngModel)]=n1>
+  &nbsp;&nbsp;&nbsp;
+  <input type="number" placeholder="Number2" [(ngModel)]=n2>
+</div>
+<br><br><br>
+<div class="operation">
+    <button (click)="add(n1,n2)">+</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="sub(n1,n2)">-</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="mul(n1,n2)">*</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="div(n1,n2)">/</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="pow(n1,n2)">^</button>
+</div>
+<br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<input placeholder="Result" [(ngModel)]=r size="50%">
+</body>
